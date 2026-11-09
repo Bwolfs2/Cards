@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Cards</string>
+
+    <!-- Jogadores -->
+    <string name="default_player_name">Jogador X</string>
+    <string name="default_score">0</string>
+
+    <!-- Botões de Pontuação -->
+    <string name="btn_plus_1">+1</string>
+    <string name="btn_plus_3">+3</string>
+    <string name="btn_plus_6">+6</string>
+    <string name="btn_plus_9">+9</string>
+    <string name="btn_plus_12">+12</string>
 </resources>
