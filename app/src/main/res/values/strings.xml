@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Cards</string>
+    <string name="score_tracker">Score Tracker</string>
 
     <!-- Jogadores -->
     <string name="default_player_name">Jogador X</string>
