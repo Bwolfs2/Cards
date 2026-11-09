@@ -11,4 +11,9 @@
     <string name="btn_plus_6">+6</string>
     <string name="btn_plus_9">+9</string>
     <string name="btn_plus_12">+12</string>
+
+    <!-- Ações Principais -->
+    <string name="btn_history">Histórico de Jogadas</string>
+    <string name="btn_clear_history">Zerar Histórico</string>
+    <string name="btn_info_names">Inf. Nomes</string>
 </resources>

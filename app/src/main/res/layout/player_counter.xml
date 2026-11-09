@@ -69,7 +69,8 @@
                     android:insetRight="0dp"
                     android:maxLines="1"
                     android:paddingHorizontal="0dp"
-                    android:text="@string/btn_plus_1" />
+                    android:text="@string/btn_plus_1"
+                    app:cornerRadius="8dp" />
 
                 <Button
                     android:id="@+id/btnMaisTres"
@@ -81,7 +82,8 @@
                     android:insetRight="0dp"
                     android:maxLines="1"
                     android:paddingHorizontal="0dp"
-                    android:text="@string/btn_plus_3" />
+                    android:text="@string/btn_plus_3"
+                    app:cornerRadius="8dp" />
 
                 <Button
                     android:id="@+id/btnMaisSeis"
@@ -93,7 +95,8 @@
                     android:insetRight="0dp"
                     android:maxLines="1"
                     android:paddingHorizontal="0dp"
-                    android:text="@string/btn_plus_6" />
+                    android:text="@string/btn_plus_6"
+                    app:cornerRadius="8dp" />
 
                 <Button
                     android:id="@+id/btnMaisNove"
@@ -105,7 +108,8 @@
                     android:insetRight="0dp"
                     android:maxLines="1"
                     android:paddingHorizontal="0dp"
-                    android:text="@string/btn_plus_9" />
+                    android:text="@string/btn_plus_9"
+                    app:cornerRadius="8dp" />
 
                 <Button
                     android:id="@+id/btnMaisDoze"
@@ -116,7 +120,8 @@
                     android:insetRight="0dp"
                     android:maxLines="1"
                     android:paddingHorizontal="0dp"
-                    android:text="@string/btn_plus_12" />
+                    android:text="@string/btn_plus_12"
+                    app:cornerRadius="8dp" />
 
             </LinearLayout>
 

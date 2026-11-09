@@ -27,6 +27,23 @@ class MainActivity : AppCompatActivity() {
 
         setupPlayerCounter(player1View, "Bwolf")
         setupPlayerCounter(player2View, "Rodrigo")
+
+        // Botões de Ação
+        val btnHistorico = findViewById<Button>(R.id.btnHistorico)
+        val btnZerarHistorico = findViewById<Button>(R.id.btnZerarHistorico)
+        val btnInfNomes = findViewById<Button>(R.id.btnInfNomes)
+
+        btnHistorico.setOnClickListener {
+            // TODO: Ação para Histórico de Jogadas
+        }
+
+        btnZerarHistorico.setOnClickListener {
+            // TODO: Ação para Zerar Histórico
+        }
+
+        btnInfNomes.setOnClickListener {
+            // TODO: Ação para Inf. Nomes
+        }
     }
 
     private fun setupPlayerCounter(containerView: View, playerName: String) {
