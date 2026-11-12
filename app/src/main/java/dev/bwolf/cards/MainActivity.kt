@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -18,6 +19,31 @@ class MainActivity : AppCompatActivity() {
 
     private val historyList = ArrayList<HistoryItem>()
     private var moveCounter = 0
+
+    private var player1Name = "Bwolf"
+    private var player2Name = "Rodrigo"
+
+    private lateinit var tvPlayer1Name: TextView
+    private lateinit var tvPlayer2Name: TextView
+
+    private val editNamesLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == RESULT_OK && result.data != null) {
+            val newP1 = result.data?.getStringExtra(EditNamesActivity.EXTRA_PLAYER1_NAME)
+            val newP2 = result.data?.getStringExtra(EditNamesActivity.EXTRA_PLAYER2_NAME)
+
+            if (!newP1.isNullOrEmpty()) {
+                player1Name = newP1
+                tvPlayer1Name.text = newP1
+            }
+            if (!newP2.isNullOrEmpty()) {
+                player2Name = newP2
+                tvPlayer2Name.text = newP2
+            }
+            Toast.makeText(this, R.string.names_updated_toast, Toast.LENGTH_SHORT).show()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,8 +59,11 @@ class MainActivity : AppCompatActivity() {
         val player1View = findViewById<View>(R.id.playerCounter1)
         val player2View = findViewById<View>(R.id.playerCounter2)
 
-        val resetPlayer1 = setupPlayerCounter(player1View, "Bwolf")
-        val resetPlayer2 = setupPlayerCounter(player2View, "Rodrigo")
+        tvPlayer1Name = player1View.findViewById(R.id.textViewPlayer)
+        tvPlayer2Name = player2View.findViewById(R.id.textViewPlayer)
+
+        val resetPlayer1 = setupPlayerCounter(player1View) { player1Name }
+        val resetPlayer2 = setupPlayerCounter(player2View) { player2Name }
 
         // Botões de Ação
         val btnHistorico = findViewById<Button>(R.id.btnHistorico)
@@ -57,17 +86,21 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnInfNomes.setOnClickListener {
-            // TODO: Ação para Inf. Nomes
+            val intent = Intent(this, EditNamesActivity::class.java).apply {
+                putExtra(EditNamesActivity.EXTRA_PLAYER1_NAME, player1Name)
+                putExtra(EditNamesActivity.EXTRA_PLAYER2_NAME, player2Name)
+            }
+            editNamesLauncher.launch(intent)
         }
     }
 
-    private fun setupPlayerCounter(containerView: View, playerName: String): () -> Unit {
+    private fun setupPlayerCounter(containerView: View, getPlayerName: () -> String): () -> Unit {
         var score = 0
 
         val tvPlayerName = containerView.findViewById<TextView>(R.id.textViewPlayer)
         val tvPlayerScore = containerView.findViewById<TextView>(R.id.textViewPlayerScore)
 
-        tvPlayerName.text = playerName
+        tvPlayerName.text = getPlayerName()
         tvPlayerScore.text = "0"
 
         fun addPoints(points: Int) {
@@ -75,7 +108,7 @@ class MainActivity : AppCompatActivity() {
             tvPlayerScore.text = score.toString()
             moveCounter++
             val time = SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date())
-            historyList.add(HistoryItem(moveCounter, playerName, points, time))
+            historyList.add(HistoryItem(moveCounter, getPlayerName(), points, time))
         }
 
         containerView.findViewById<Button>(R.id.btnMaisUm).setOnClickListener { addPoints(1) }
