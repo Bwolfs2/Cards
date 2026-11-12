@@ -44,9 +44,10 @@ class EditNamesActivity : AppCompatActivity() {
         etPlayer2.setText(currentP2)
 
         btnSalvar.setOnClickListener {
-            val defaultP1 = getString(R.string.default_player_name)
+            val defaultP1 = getString(R.string.default_player_1_name)
+            val defaultP2 = getString(R.string.default_player_2_name)
             val name1 = etPlayer1.text?.toString()?.trim().orEmpty().ifEmpty { currentP1.ifEmpty { defaultP1 } }
-            val name2 = etPlayer2.text?.toString()?.trim().orEmpty().ifEmpty { currentP2.ifEmpty { defaultP1 } }
+            val name2 = etPlayer2.text?.toString()?.trim().orEmpty().ifEmpty { currentP2.ifEmpty { defaultP2 } }
 
             val resultIntent = Intent().apply {
                 putExtra(EXTRA_PLAYER1_NAME, name1)

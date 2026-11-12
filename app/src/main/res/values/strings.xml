@@ -4,6 +4,8 @@
 
     <!-- Jogadores -->
     <string name="default_player_name">Jogador X</string>
+    <string name="default_player_1_name">Jogador 1</string>
+    <string name="default_player_2_name">Jogador 2</string>
     <string name="default_score">0</string>
 
     <!-- Botões de Pontuação -->

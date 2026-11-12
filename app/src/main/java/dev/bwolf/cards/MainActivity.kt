@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
     private val historyList = ArrayList<HistoryItem>()
     private var moveCounter = 0
 
-    private var player1Name = "Bwolf"
-    private var player2Name = "Rodrigo"
+    private lateinit var player1Name: String
+    private lateinit var player2Name: String
 
     private lateinit var tvPlayer1Name: TextView
     private lateinit var tvPlayer2Name: TextView
@@ -49,6 +49,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        player1Name = getString(R.string.default_player_1_name)
+        player2Name = getString(R.string.default_player_2_name)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
