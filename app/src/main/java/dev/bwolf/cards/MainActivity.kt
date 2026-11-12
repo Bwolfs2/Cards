@@ -1,15 +1,23 @@
 package dev.bwolf.cards
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
+
+    private val historyList = ArrayList<HistoryItem>()
+    private var moveCounter = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,8 +33,8 @@ class MainActivity : AppCompatActivity() {
         val player1View = findViewById<View>(R.id.playerCounter1)
         val player2View = findViewById<View>(R.id.playerCounter2)
 
-        setupPlayerCounter(player1View, "Bwolf")
-        setupPlayerCounter(player2View, "Rodrigo")
+        val resetPlayer1 = setupPlayerCounter(player1View, "Bwolf")
+        val resetPlayer2 = setupPlayerCounter(player2View, "Rodrigo")
 
         // Botões de Ação
         val btnHistorico = findViewById<Button>(R.id.btnHistorico)
@@ -34,11 +42,18 @@ class MainActivity : AppCompatActivity() {
         val btnInfNomes = findViewById<Button>(R.id.btnInfNomes)
 
         btnHistorico.setOnClickListener {
-            // TODO: Ação para Histórico de Jogadas
+            val intent = Intent(this, HistoricoActivity::class.java).apply {
+                putExtra(HistoricoActivity.EXTRA_HISTORY_LIST, historyList)
+            }
+            startActivity(intent)
         }
 
         btnZerarHistorico.setOnClickListener {
-            // TODO: Ação para Zerar Histórico
+            historyList.clear()
+            moveCounter = 0
+            resetPlayer1()
+            resetPlayer2()
+            Toast.makeText(this, R.string.history_cleared_toast, Toast.LENGTH_SHORT).show()
         }
 
         btnInfNomes.setOnClickListener {
@@ -46,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupPlayerCounter(containerView: View, playerName: String) {
+    private fun setupPlayerCounter(containerView: View, playerName: String): () -> Unit {
         var score = 0
 
         val tvPlayerName = containerView.findViewById<TextView>(R.id.textViewPlayer)
@@ -58,6 +73,9 @@ class MainActivity : AppCompatActivity() {
         fun addPoints(points: Int) {
             score += points
             tvPlayerScore.text = score.toString()
+            moveCounter++
+            val time = SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date())
+            historyList.add(HistoryItem(moveCounter, playerName, points, time))
         }
 
         containerView.findViewById<Button>(R.id.btnMaisUm).setOnClickListener { addPoints(1) }
@@ -65,5 +83,10 @@ class MainActivity : AppCompatActivity() {
         containerView.findViewById<Button>(R.id.btnMaisSeis).setOnClickListener { addPoints(6) }
         containerView.findViewById<Button>(R.id.btnMaisNove).setOnClickListener { addPoints(9) }
         containerView.findViewById<Button>(R.id.btnMaisDoze).setOnClickListener { addPoints(12) }
+
+        return {
+            score = 0
+            tvPlayerScore.text = "0"
+        }
     }
 }

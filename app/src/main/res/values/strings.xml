@@ -17,4 +17,20 @@
     <string name="btn_history">Histórico de Jogadas</string>
     <string name="btn_clear_history">Zerar Histórico</string>
     <string name="btn_info_names">Inf. Nomes</string>
+
+    <!-- Histórico -->
+    <string name="history_title">Histórico de Jogadas</string>
+    <string name="empty_history">Nenhuma jogada registrada ainda.</string>
+    <string name="history_cleared_toast">Histórico e pontuações zerados!</string>
+    <string name="history_move_number">#%1$d</string>
+    <string name="history_points">+%1$d pts</string>
+
+    <!-- Nomes dos Jogadores -->
+    <string name="edit_names_title">Nomes dos Jogadores</string>
+    <string name="label_player_1">Jogador 1</string>
+    <string name="label_player_2">Jogador 2</string>
+    <string name="hint_player_1">Digite o nome do Jogador 1</string>
+    <string name="hint_player_2">Digite o nome do Jogador 2</string>
+    <string name="btn_save">Salvar</string>
+    <string name="names_updated_toast">Nomes atualizados com sucesso!</string>
 </resources>
