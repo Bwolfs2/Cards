@@ -77,11 +77,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:background="?attr/colorContainer"
+                        android:background="?attr/colorSecondaryContainer"
                         android:paddingHorizontal="12dp"
                         android:paddingVertical="4dp"
                         android:text="Saque: Time A"
-                        android:textColor="?attr/colorOnContainer"
+                        android:textColor="?attr/colorOnSecondaryContainer"
                         android:textSize="14sp" />
 
                 </LinearLayout>
@@ -197,7 +197,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="16dp"
-                android:background="?attr/colorOutlineVariant" />
+                android:background="?attr/colorOutline" />
 
             <!-- Ações de Navegação para os Módulos Stitch -->
             <Button
