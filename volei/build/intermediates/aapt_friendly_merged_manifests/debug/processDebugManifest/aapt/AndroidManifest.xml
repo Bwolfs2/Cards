@@ -7,7 +7,7 @@
     <application>
         <activity
             android:name="dev.bwolf.cards.volei.PlacarTempoRealActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/volei_title_placar" />
         <activity
             android:name="dev.bwolf.cards.volei.EscalacaoRotacaoActivity"

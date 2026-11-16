@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.bwolf.cards.volei">
 
     <application>
         <activity
-            android:name=".PlacarTempoRealActivity"
-            android:exported="true"
+            android:name="dev.bwolf.cards.volei.PlacarTempoRealActivity"
+            android:exported="false"
             android:label="@string/volei_title_placar" />
         <activity
-            android:name=".EscalacaoRotacaoActivity"
+            android:name="dev.bwolf.cards.volei.EscalacaoRotacaoActivity"
             android:exported="false"
             android:label="@string/volei_title_escalacao" />
         <activity
-            android:name=".RegrasConfiguracoesActivity"
+            android:name="dev.bwolf.cards.volei.RegrasConfiguracoesActivity"
             android:exported="false"
             android:label="@string/volei_title_regras" />
         <activity
-            android:name=".HistoricoSetsActivity"
+            android:name="dev.bwolf.cards.volei.HistoricoSetsActivity"
             android:exported="false"
             android:label="@string/volei_title_historico" />
     </application>

@@ -7,39 +7,39 @@
 5-->INJECTED
 6
 7    <application>
-7-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:4:5-21:19
+7-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:5:5-22:19
 8        <activity
-8-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:5:9-8:58
+8-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:6:9-9:58
 9            android:name="dev.bwolf.cards.volei.PlacarTempoRealActivity"
-9-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:6:13-52
-10            android:exported="true"
-10-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:7:13-36
+9-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:7:13-73
+10            android:exported="false"
+10-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:8:13-37
 11            android:label="@string/volei_title_placar" />
-11-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:8:13-55
+11-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:9:13-55
 12        <activity
-12-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:9:9-12:61
+12-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:10:9-13:61
 13            android:name="dev.bwolf.cards.volei.EscalacaoRotacaoActivity"
-13-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:10:13-53
+13-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:11:13-74
 14            android:exported="false"
-14-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:11:13-37
+14-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:12:13-37
 15            android:label="@string/volei_title_escalacao" />
-15-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:12:13-58
+15-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:13:13-58
 16        <activity
-16-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:13:9-16:58
+16-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:14:9-17:58
 17            android:name="dev.bwolf.cards.volei.RegrasConfiguracoesActivity"
-17-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:14:13-56
+17-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:15:13-77
 18            android:exported="false"
-18-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:15:13-37
+18-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:16:13-37
 19            android:label="@string/volei_title_regras" />
-19-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:16:13-55
+19-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:17:13-55
 20        <activity
-20-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:17:9-20:61
+20-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:18:9-21:61
 21            android:name="dev.bwolf.cards.volei.HistoricoSetsActivity"
-21-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:18:13-50
+21-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:19:13-71
 22            android:exported="false"
-22-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:19:13-37
+22-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:20:13-37
 23            android:label="@string/volei_title_historico" />
-23-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:20:13-58
+23-->/Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:21:13-58
 24    </application>
 25
 26</manifest>
