@@ -95,6 +95,12 @@ class MainActivity : AppCompatActivity() {
             }
             editNamesLauncher.launch(intent)
         }
+
+        val btnModoVolei = findViewById<Button>(R.id.btnModoVolei)
+        btnModoVolei.setOnClickListener {
+            val intent = Intent(this, dev.bwolf.cards.volei.PlacarTempoRealActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setupPlayerCounter(containerView: View, getPlayerName: () -> String): () -> Unit {

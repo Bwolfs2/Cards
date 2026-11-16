@@ -1,0 +1,9 @@
+dev.bwolf.cards.volei-pngs-0 /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/build/generated/res/pngs/debug
+dev.bwolf.cards.volei-updated_navigation_xml-1 /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/build/generated/updated_navigation_xml/debug
+dev.bwolf.cards.volei-mergeDebugResources-2 /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+dev.bwolf.cards.volei-mergeDebugResources-3 /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+dev.bwolf.cards.volei-debug-4 /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/build/intermediates/merged_res/debug/mergeDebugResources
+dev.bwolf.cards.volei-debug-5 /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/build/intermediates/packaged_res/debug/packageDebugResources
+dev.bwolf.cards.volei-debug-6 /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/debug/res
+dev.bwolf.cards.volei-main-7 /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/res
+gradleHome-0 /Users/vilson/.gradle

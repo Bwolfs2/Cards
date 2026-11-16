@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".PlacarTempoRealActivity"
+            android:exported="true"
+            android:label="@string/volei_title_placar" />
+        <activity
+            android:name=".EscalacaoRotacaoActivity"
+            android:exported="false"
+            android:label="@string/volei_title_escalacao" />
+        <activity
+            android:name=".RegrasConfiguracoesActivity"
+            android:exported="false"
+            android:label="@string/volei_title_regras" />
+        <activity
+            android:name=".HistoricoSetsActivity"
+            android:exported="false"
+            android:label="@string/volei_title_historico" />
+    </application>
+
+</manifest>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EscalacaoRotacaoActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="@string/volei_title_escalacao"
+            app:titleCentered="true" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Seleção de Time -->
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:checkedButton="@id/btnSelectTeamA"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/btnSelectTeamA"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Time A" />
+
+                <Button
+                    android:id="@+id/btnSelectTeamB"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Time B" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <!-- Quadra Visual de Vôlei -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:strokeColor="?attr/colorPrimary"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:text="--- REDE (Ataque) ---"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <!-- Linha da Frente (Rede): Pos 4, Pos 3, Pos 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvPos4"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorSurfaceContainer"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Pos 4"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvPos3"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorSurfaceContainer"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Pos 3"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvPos2"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorSurfaceContainer"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Pos 2"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <!-- Linha do Fundo (Defesa): Pos 5, Pos 6, Pos 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvPos5"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorSurfaceContainer"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Pos 5"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvPos6"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorSurfaceContainer"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Pos 6"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvPos1"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="?attr/colorSecondaryContainer"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Pos 1 (Sacador)"
+                            android:textColor="?attr/colorOnSecondaryContainer"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnRotate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/btn_rotate_lineup"
+                android:textSize="16sp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

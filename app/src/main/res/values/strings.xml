@@ -19,6 +19,7 @@
     <string name="btn_history">Histórico de Jogadas</string>
     <string name="btn_clear_history">Zerar Histórico</string>
     <string name="btn_info_names">Inf. Nomes</string>
+    <string name="btn_modo_volei">Vôlei de Fim de Semana</string>
 
     <!-- Histórico -->
     <string name="history_title">Histórico de Jogadas</string>

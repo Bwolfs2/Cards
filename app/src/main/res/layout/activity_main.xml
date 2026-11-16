@@ -86,6 +86,16 @@
             android:textSize="20sp"
             app:cornerRadius="8dp" />
 
+        <Button
+            android:id="@+id/btnModoVolei"
+            style="?attr/materialButtonTonalStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_modo_volei"
+            android:textSize="20sp"
+            app:cornerRadius="8dp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

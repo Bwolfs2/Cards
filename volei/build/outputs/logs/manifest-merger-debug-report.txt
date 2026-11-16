@@ -1,0 +1,50 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:2:1-23:12
+	package
+		INJECTED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:4:5-21:19
+activity#dev.bwolf.cards.volei.PlacarTempoRealActivity
+ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:5:9-8:58
+	android:label
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:8:13-55
+	android:exported
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:7:13-36
+	android:name
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:6:13-52
+activity#dev.bwolf.cards.volei.EscalacaoRotacaoActivity
+ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:9:9-12:61
+	android:label
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:12:13-58
+	android:exported
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:10:13-53
+activity#dev.bwolf.cards.volei.RegrasConfiguracoesActivity
+ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:13:9-16:58
+	android:label
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:16:13-55
+	android:exported
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:14:13-56
+activity#dev.bwolf.cards.volei.HistoricoSetsActivity
+ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:17:9-20:61
+	android:label
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:20:13-58
+	android:exported
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml:18:13-50
+uses-sdk
+INJECTED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml
+INJECTED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/vilson/AndroidStudioProjects/PosMobile/Cards/volei/src/main/AndroidManifest.xml

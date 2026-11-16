@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":volei"))
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
